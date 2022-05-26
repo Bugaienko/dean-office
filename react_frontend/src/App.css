@@ -1,10 +1,53 @@
 .App {
   text-align: center;
+  padding: 20px 10%;
+}
+.main-students-show {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 5px 5px 10px;
+  padding: 5px;
+}
+@media (max-width: 800px) {
+  .main-students-show {
+    flex-direction: column;
+  }
+}
+.full-student-detail {
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 400;
+  color: #282c34;
+  text-decoration: #282c34;
+  margin: 10px;
+  padding: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-students {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #282c34;
+  font-weight: 600;
+  padding: 5px;
+}
+.nav-students:hover {
+  background-color: green;
+  color: aliceblue;
+}
+.nav-addStudent {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #282c34;
+  font-weight: 600;
+  padding: 5px;
+}
+.nav-addStudent:hover {
+  background-color: green;
+  color: aliceblue;
 }
 
 @media (prefers-reduced-motion: no-preference) {
