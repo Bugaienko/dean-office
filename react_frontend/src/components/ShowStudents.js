@@ -24,9 +24,11 @@ const ShowStudents = () => {
 	return (
 		<div>
 			<div className="main-students-show">
+				<div className="row">
 				{
-					students.map((student, index) => (
 
+					students.map((student, index) => (
+						<div className="col-md-4" key={student.id}>
 						<Card className='m-3 rounded shadow-lg main-students-show' style={{'width': '20em'}} key={student.id}>
 							<Card.Img variant="top" src={student.image}/>
 							<Card.Body>
@@ -42,9 +44,11 @@ const ShowStudents = () => {
 
 							</Card.Body>
 						</Card>
-
+						</div>
 					))
+
 				}
+				</div>
 			</div>
 		</div>
 	)
